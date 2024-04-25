@@ -14,5 +14,7 @@
 
         public string FullName => string.Join(" ", FirstName, LastName);
        
+
+        public DepartmentEnum Department { get; set; }
     }
 }
