@@ -1,4 +1,6 @@
-﻿namespace eAppointment.Server.Domain.Entities
+﻿using eAppointment.Server.Domain.Enums;
+
+namespace eAppointment.Server.Domain.Entities
 {
     public sealed class Doctor
     {
