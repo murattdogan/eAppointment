@@ -1,0 +1,13 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+@eAppointmentServer.WebAPI_HostAddress = http://localhost:5262
+
+POST http://localhost:5262/api/Auth/Login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "userNameOrEmail": "admin",
+  "password": "1"
+}
+
+###
