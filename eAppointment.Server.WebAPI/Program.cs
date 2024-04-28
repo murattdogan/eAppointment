@@ -56,8 +56,8 @@ builder.Services.AddSwaggerGen(setup =>
                     { jwtSecuritySheme, Array.Empty<string>() }
                 });
 });
-var app = builder.Build();
 
+var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
@@ -65,13 +65,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
 app.UseHttpsRedirection();
 
 app.UseCors();
-app.UseAuthorization();
+
 
 app.MapControllers();
 
 Helper.CreateUserAsync(app).Wait();
+
 app.Run();
